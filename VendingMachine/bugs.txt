@@ -1,0 +1,2 @@
+1. Method getSlotIndex changed from private to public.
+2. Method getItem changed from protected to public.
