@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>VendingMachineTest.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (Mar 9, 2016 4:22:45 PM)</a> &gt; <a href="../../index.html" class="el_group">VendingMachine</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.towson.cis.cosc442.project3.vendingmachine</a> &gt; <span class="el_source">VendingMachineTest.java</span></div><h1>VendingMachineTest.java</h1><pre class="source lang-java linenums">/**
+ * 
+ */
+package edu.towson.cis.cosc442.project3.vendingmachine;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * @author Fima
+ *
+ */
+<span class="fc" id="L16">public class VendingMachineTest {</span>
+
+	VendingMachine myVendingMachine;
+	VendingMachineItem v1, v2;
+	
+	
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+<span class="fc" id="L27">		myVendingMachine = new VendingMachine();</span>
+<span class="fc" id="L28">		v1 = new VendingMachineItem(&quot;Oreo&quot;, 5);</span>
+<span class="fc" id="L29">		v2 = new VendingMachineItem(&quot;Dorito&quot;, 4);</span>
+<span class="fc" id="L30">	}</span>
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@After
+	public void tearDown() throws Exception {
+<span class="fc" id="L37">	}</span>
+
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
+	 * Testing for successfully adding an item to an empty slot A of the vending machine.
+	 */
+	@Test
+	public void testAddItem1_1() {
+<span class="fc" id="L45">		myVendingMachine.addItem(v1, &quot;A&quot;);</span>
+<span class="fc" id="L46">		assertNotNull(myVendingMachine.getSlotIndex(&quot;A&quot;));</span>
+<span class="fc" id="L47">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
+	 * Testing for successfully adding an item to an empty slot B of the vending machine.
+	 */
+	@Test
+	public void testAddItem1_2() {
+<span class="fc" id="L55">		myVendingMachine.addItem(v1, &quot;B&quot;);</span>
+<span class="fc" id="L56">		assertNotNull(myVendingMachine.getSlotIndex(&quot;B&quot;));</span>
+<span class="fc" id="L57">	}</span>
+
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
+	 * Testing for successfully adding an item to an empty slot C of the vending machine.
+	 */
+	@Test
+	public void testAddItem1_3() {
+<span class="fc" id="L65">		myVendingMachine.addItem(v1, &quot;C&quot;);</span>
+<span class="fc" id="L66">		assertNotNull(myVendingMachine.getSlotIndex(&quot;C&quot;));</span>
+<span class="fc" id="L67">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
+	 * Testing for successfully adding an item to an empty slot D of the vending machine.
+	 */
+	@Test
+	public void testAddItem1_4() {
+<span class="fc" id="L75">		myVendingMachine.addItem(v1, &quot;D&quot;);</span>
+<span class="fc" id="L76">		assertNotNull(myVendingMachine.getSlotIndex(&quot;D&quot;));</span>
+<span class="fc" id="L77">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
+	 * Testing for unsuccessfully adding an item to a slot in the vending machine because the slot is occupied.
+	 */
+	@Test
+	public void testAddItem2() {
+<span class="fc" id="L85">		boolean thrown = false;</span>
+		try {
+<span class="fc" id="L87">			myVendingMachine.addItem(v1, &quot;A&quot;);</span>
+<span class="nc" id="L88">			myVendingMachine.addItem(v2, &quot;A&quot;);</span>
+<span class="pc" id="L89">			} catch (VendingMachineException e) {</span>
+<span class="fc" id="L90">			    thrown = true;</span>
+			  }
+<span class="fc" id="L92">		assertTrue(thrown);</span>
+<span class="fc" id="L93">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
+	 * Testing for unsuccessfully adding an item to a slot in the vending machine because the slot code is invalid.
+	 */
+	@Test
+	public void testAddItem3() {
+<span class="fc" id="L101">		boolean thrown = false;</span>
+		try {
+<span class="nc" id="L103">			myVendingMachine.addItem(v1, &quot;G&quot;);</span>
+<span class="pc" id="L104">			} catch (VendingMachineException e) {</span>
+<span class="fc" id="L105">			    thrown = true;</span>
+			  }
+<span class="fc" id="L107">		assertTrue(thrown);</span>
+<span class="fc" id="L108">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#removeItem(java.lang.String)}.
+	 * Testing for successfully removing an item from a slot in the vending machine.
+	 */
+	@Test
+	public void testRemoveItem1() {
+<span class="fc" id="L116">		myVendingMachine.addItem(v1, &quot;A&quot;);</span>
+<span class="fc" id="L117">		myVendingMachine.removeItem(&quot;A&quot;);</span>
+<span class="fc" id="L118">		assertNull(myVendingMachine.getItem(&quot;A&quot;));</span>
+<span class="fc" id="L119">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#removeItem(java.lang.String)}.
+	 * Testing for unsuccessfully removing an item from a slot in the vending machine due to the slot being empty.
+	 */
+	@Test
+	public void testRemoveItem2() {
+<span class="fc" id="L127">		boolean thrown = false;</span>
+		try {
+<span class="nc" id="L129">			myVendingMachine.removeItem(&quot;A&quot;);</span>
+<span class="pc" id="L130">			} catch (VendingMachineException e) {</span>
+<span class="fc" id="L131">			    thrown = true;</span>
+			  }
+<span class="fc" id="L133">		assertTrue(thrown);</span>
+<span class="fc" id="L134">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#removeItem(java.lang.String)}.
+	 * Testing for unsuccessfully removing an item from a slot in the vending machine due to the slot being invalid.
+	 */
+	@Test
+	public void testRemoveItem3() {
+<span class="fc" id="L142">		boolean thrown = false;</span>
+		try {
+<span class="nc" id="L144">			myVendingMachine.removeItem(&quot;E&quot;);</span>
+<span class="pc" id="L145">			} catch (VendingMachineException e) {</span>
+<span class="fc" id="L146">			    thrown = true;</span>
+			  }
+<span class="fc" id="L148">		assertTrue(thrown);</span>
+<span class="fc" id="L149">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#insertMoney(double)}.
+	 * Testing for successfully inserting money into the vending machine.
+	 */
+	@Test
+	public void testInsertMoney1() {
+<span class="fc" id="L157">		myVendingMachine.insertMoney(5);</span>
+<span class="fc" id="L158">		assertEquals(5, myVendingMachine.getBalance(), 0.001);</span>
+<span class="fc" id="L159">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#insertMoney(double)}.
+	 * Testing for unsuccessfully inserting money into the vending machine due to negative amount.
+	 */
+	@Test
+	public void testInsertMoney2() {
+<span class="fc" id="L167">		boolean thrown = false;</span>
+		try {
+<span class="nc" id="L169">			myVendingMachine.insertMoney(-5);</span>
+<span class="pc" id="L170">			} catch (VendingMachineException e) {</span>
+<span class="fc" id="L171">			    thrown = true;</span>
+			  }
+<span class="fc" id="L173">		assertTrue(thrown);</span>
+<span class="fc" id="L174">	}</span>
+
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#getBalance()}.
+	 * Testing for initial balance being 0.
+	 */
+	@Test
+	public void testGetBalance1() {
+<span class="fc" id="L182">		double b = myVendingMachine.getBalance();</span>
+<span class="fc" id="L183">		assertEquals(0, b, 0.001);</span>
+<span class="fc" id="L184">	}</span>
+
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#getBalance()}.
+	 * Testing for balance increasing after inserting money.
+	 */
+	@Test
+	public void testGetBalance2() {
+<span class="fc" id="L192">		double b1 = myVendingMachine.getBalance();</span>
+<span class="fc" id="L193">		myVendingMachine.insertMoney(5);</span>
+<span class="fc" id="L194">		double b2 = myVendingMachine.getBalance();</span>
+<span class="fc" id="L195">		assertNotEquals(b1, b2);</span>
+<span class="fc" id="L196">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#makePurchase(java.lang.String)}.
+	 * Testing for successfully purchasing an item.
+	 */
+	@Test
+	public void testMakePurchase1() {
+<span class="fc" id="L204">		myVendingMachine.addItem(v1, &quot;A&quot;);</span>
+<span class="fc" id="L205">		myVendingMachine.insertMoney(5);</span>
+<span class="fc" id="L206">		boolean successfullyPurchased = myVendingMachine.makePurchase(&quot;A&quot;);</span>
+<span class="fc" id="L207">		assertTrue(successfullyPurchased);</span>
+<span class="fc" id="L208">	}</span>
+
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#makePurchase(java.lang.String)}.
+	 * Testing for unsuccessfully purchasing an item due to insufficient balance.
+	 */
+	@Test
+	public void testMakePurchase2() {
+<span class="fc" id="L216">		myVendingMachine.addItem(v1, &quot;A&quot;);</span>
+<span class="fc" id="L217">		boolean unsuccessfullyPurchased = myVendingMachine.makePurchase(&quot;A&quot;);</span>
+<span class="fc" id="L218">		assertFalse(unsuccessfullyPurchased);</span>
+<span class="fc" id="L219">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#makePurchase(java.lang.String)}.
+	 * Testing for unsuccessfully purchasing an item due to empty slot.
+	 */
+	@Test
+	public void testMakePurchase3() {
+<span class="fc" id="L227">		boolean unsuccessfullyPurchased = myVendingMachine.makePurchase(&quot;A&quot;);</span>
+<span class="fc" id="L228">		assertFalse(unsuccessfullyPurchased);</span>
+<span class="fc" id="L229">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#makePurchase(java.lang.String)}.
+	 * Testing for unsuccessfully purchasing an item due to invalid slot.
+	 */
+	@Test
+	public void testMakePurchase4() {
+<span class="fc" id="L237">		boolean thrown = false;</span>
+		try {
+<span class="nc" id="L239">			myVendingMachine.makePurchase(&quot;F&quot;);</span>
+<span class="pc" id="L240">			} catch (VendingMachineException e) {</span>
+<span class="fc" id="L241">			    thrown = true;</span>
+			  }
+<span class="fc" id="L243">		assertTrue(thrown);</span>
+<span class="fc" id="L244">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#returnChange()}.
+	 * Testing for successfully returning no change due to initial balance being 0.
+	 */
+	@Test
+	public void testReturnChange1() {
+<span class="fc" id="L252">		assertEquals(0, myVendingMachine.returnChange(), 0.001);</span>
+<span class="fc" id="L253">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#returnChange()}.
+	 * Testing for successfully returning change equal to the previous balance.
+	 */
+	@Test
+	public void testReturnChange2() {
+<span class="fc" id="L261">		myVendingMachine.insertMoney(5);</span>
+<span class="fc" id="L262">		assertEquals(myVendingMachine.getBalance(), myVendingMachine.returnChange(), 0.001);</span>
+<span class="fc" id="L263">	}</span>
+	
+	/**
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#returnChange()}.
+	 * Testing to ensure balance is 0 after returning change.
+	 */
+	@Test
+	public void testReturnChange3() {
+<span class="fc" id="L271">		myVendingMachine.insertMoney(5);</span>
+<span class="fc" id="L272">		myVendingMachine.returnChange();</span>
+<span class="fc" id="L273">		assertEquals(0, myVendingMachine.getBalance(), 0.001);</span>
+<span class="fc" id="L274">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span>AllTests (Mar 9, 2016 4:22:45 PM)</div></body></html>

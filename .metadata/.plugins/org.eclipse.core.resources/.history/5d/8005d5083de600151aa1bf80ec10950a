@@ -38,44 +38,14 @@ public class VendingMachineTest {
 
 	/**
 	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
-	 * Testing for successfully adding an item to an empty slot A of the vending machine.
+	 * Testing for successfully adding an item to an empty slot of the vending machine.
 	 */
 	@Test
-	public void testAddItem1_1() {
+	public void testAddItem1() {
 		myVendingMachine.addItem(v1, "A");
 		assertNotNull(myVendingMachine.getSlotIndex("A"));
 	}
-	
-	/**
-	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
-	 * Testing for successfully adding an item to an empty slot B of the vending machine.
-	 */
-	@Test
-	public void testAddItem1_2() {
-		myVendingMachine.addItem(v1, "B");
-		assertNotNull(myVendingMachine.getSlotIndex("B"));
-	}
 
-	/**
-	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
-	 * Testing for successfully adding an item to an empty slot C of the vending machine.
-	 */
-	@Test
-	public void testAddItem1_3() {
-		myVendingMachine.addItem(v1, "C");
-		assertNotNull(myVendingMachine.getSlotIndex("C"));
-	}
-	
-	/**
-	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
-	 * Testing for successfully adding an item to an empty slot D of the vending machine.
-	 */
-	@Test
-	public void testAddItem1_4() {
-		myVendingMachine.addItem(v1, "D");
-		assertNotNull(myVendingMachine.getSlotIndex("D"));
-	}
-	
 	/**
 	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
 	 * Testing for unsuccessfully adding an item to a slot in the vending machine because the slot is occupied.
