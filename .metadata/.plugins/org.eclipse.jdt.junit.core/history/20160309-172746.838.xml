@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="edu.towson.cis.cosc442.project3.vendingmachine (1)" project="VendingMachine2" tests="54" started="54" failures="2" errors="0" ignored="0">
+  <testsuite name="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true">
+    <testcase name="testInsertMoney_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testInsertMoney_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testMakePurchase_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testMakePurchase_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testMakePurchase_3" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testMakePurchase_4" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testReturnChange_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testVendingMachine_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testVendingMachine_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testRemoveItem_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testRemoveItem_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testRemoveItem_3" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testAddItem_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testAddItem_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testAddItem_3" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testAddItem_4" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testAddItem_5" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testAddItem_6" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testGetItem_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testGetItem_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+    <testcase name="testGetBalance_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" incomplete="true"/>
+  </testsuite>
+  <testsuite name="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineExceptionTest" incomplete="true">
+    <testcase name="testVendingMachineException_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineExceptionTest" incomplete="true"/>
+    <testcase name="testVendingMachineException_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineExceptionTest" incomplete="true"/>
+  </testsuite>
+  <testsuite name="edu.towson.cis.cosc442.project3.vendingmachine.TestAll" incomplete="true">
+    <testsuite name="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.007">
+      <testcase name="testInsertMoney_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.001"/>
+      <testcase name="testInsertMoney_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testMakePurchase_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testMakePurchase_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testMakePurchase_3" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testMakePurchase_4" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testReturnChange_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testVendingMachine_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testVendingMachine_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.001"/>
+      <testcase name="testRemoveItem_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testRemoveItem_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testRemoveItem_3" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0">
+        <failure>java.lang.AssertionError: Expected exception: edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException&#13;
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:32)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+java.lang.AssertionError: Expected exception: edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException&#13;
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:32)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="testAddItem_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testAddItem_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testAddItem_3" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testAddItem_4" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testAddItem_5" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testAddItem_6" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testGetItem_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testGetItem_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+      <testcase name="testGetBalance_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineExceptionTest" time="0.0">
+      <testcase name="testVendingMachineException_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineExceptionTest" time="0.0"/>
+      <testcase name="testVendingMachineException_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineExceptionTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItemTest" incomplete="true">
+      <testcase name="testVendingMachineItem_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItemTest" incomplete="true"/>
+      <testcase name="testVendingMachineItem_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItemTest" incomplete="true"/>
+      <testcase name="testGetPrice_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItemTest" incomplete="true"/>
+      <testcase name="testGetName_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItemTest" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+  <testsuite name="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItemTest" time="0.001">
+    <testcase name="testVendingMachineItem_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItemTest" time="0.0"/>
+    <testcase name="testVendingMachineItem_2" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItemTest" time="0.0"/>
+    <testcase name="testGetPrice_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItemTest" time="0.0"/>
+    <testcase name="testGetName_1" classname="edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItemTest" time="0.0"/>
+  </testsuite>
+</testrun>
